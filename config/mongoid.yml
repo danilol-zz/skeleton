@@ -1,0 +1,27 @@
+development:
+  clients:
+    default:
+      database: skeleton_development
+      hosts:
+        - localhost:<%= ENV["MONGODB_PORT"] || "27017" %>
+  options:
+    #allow_dynamic_fields: false
+    #identity_map_enabled: false
+    include_type_for_serialization: true
+    scope_overwrite_exception: true
+    raise_not_found_error: true
+    use_utc: true
+
+test:
+  clients:
+    default:
+      database: skeleton_test
+      hosts:
+        - localhost:<%= ENV["MONGODB_PORT"] || "27017" %>
+  options:
+    #allow_dynamic_fields: false
+    #identity_map_enabled: false
+    include_type_for_serialization: true
+    scope_overwrite_exception: true
+    raise_not_found_error: true
+    use_utc: true

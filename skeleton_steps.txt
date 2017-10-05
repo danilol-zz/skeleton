@@ -1,0 +1,19 @@
+mkdir skeleton
+git init
+gem install bundler
+bundle init
+
+add sinatra to Gemfile
+
+bundle install
+
+create app.rb
+
+  1 require "sinatra/base"¬  
+  2 ¬   
+  3 class App < Sinatra::Base¬
+  4   get '/' do¬                                                                                                                                                                                                    
+  5     "Hello ladies"¬
+  6   end¬
+  7 end
+
